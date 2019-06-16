@@ -4,21 +4,22 @@ const path = require('path')
 
 let win
 
-const cliPath = path.join(process.cwd(), "node_modules/pxt-microbit") 
+const cliPath = path.join(__dirname, "./node_modules/pxt-microbit") 
 
 function startServerAndCreateWindow() {
-  pxt.mainCli(cliPath, ["serve", "-no-browser", "-electron"])
+  pxt.mainCli(cliPath, ["serve", "-no-browser"])
   createWindow()
 }
 
 function createWindow () {
   win = new BrowserWindow({
-    width: 800,
-    height: 600,
-    title: "code the micro:bit"
+    width: 1280,
+    height: 800,
+    icon: path.join(__dirname, './microbit.png'),
+    title: "Makecode for micro:bit"
   })
   Menu.setApplicationMenu(null)
-  win.loadURL(`file://${__dirname}/index.html?electron=1#local_token=${pxt.globalConfig.localToken}`)
+  win.loadURL(`file://${__dirname}/index.html#local_token=${pxt.globalConfig.localToken}`)
   win.on('closed', () => {
     win = null
   })

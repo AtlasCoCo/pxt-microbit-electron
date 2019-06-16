@@ -1,26 +1,14 @@
 {
-  "name"    : "code-the-microbit",
+  "name"    : "Makecode for micro:bit",
   "version" : "1.0.0",
   "description": "Blocks / Javascript editor",
   "author": "Microsoft",
-  "repository": {
-      "url": "https://github.com/Microsoft/pxt-microbit-electron"
-  },
-  "license": "MIT",
   "main"    : "main.js",
   "scripts": {
-      "package": "node ./dev_tools/package.js",
-      "rebuild-native": "node ./dev_tools/rebuild-native.js",
       "start": "node_modules/.bin/electron ."
   },
-  "dependencies": {
-      "pxt-microbit": "^0.4.47",
-      "pxt-core": "^0.4.55"
-  },
   "devDependencies": {
-      "electron": "^1.4.1",
-      "electron-rebuild": "^1.2.1",
-      "electron-packager": "^8.1.0",
-      "rimraf": "2.5.4"
+      "electron": "3.0.10",
+      "pxt-microbit": "*"
   }
 }
