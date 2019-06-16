@@ -1,3 +1,5 @@
+![Interface](Interface.png)
+
 # PXT micro:bit Electron app
 
 A prototype for an offline (not quite there yet) standalone client of PXT.
