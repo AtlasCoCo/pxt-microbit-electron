@@ -9,6 +9,6 @@
   },
   "devDependencies": {
       "electron": "3.0.10",
-      "pxt-microbit": "*"
+      "pxt-microbit": "2.0.2"
   }
 }
