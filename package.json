@@ -8,7 +8,7 @@
       "start": "node_modules/.bin/electron ."
   },
   "devDependencies": {
-      "electron": "3.0.10",
+      "electron": "9.1.0",
       "pxt-microbit": "2.0.2"
   }
 }
